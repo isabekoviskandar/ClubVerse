@@ -1,12 +1,8 @@
 <?php
 
-use App\Api\Controllers\AuthController;
+use App\API\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Api\Controllers\UserController;
-
-Route::post('/users', [UserController::class, 'store']);
-
 
 Route::get('/user', function (Request $request) {
     return $request->user();
